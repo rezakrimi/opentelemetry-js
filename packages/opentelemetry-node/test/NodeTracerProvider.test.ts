@@ -80,16 +80,6 @@ describe('NodeTracerProvider', () => {
       });
       assert.ok(provider instanceof NodeTracerProvider);
     });
-
-    it('should construct an instance with default attributes', () => {
-      provider = new NodeTracerProvider({
-        defaultAttributes: {
-          region: 'eu-west',
-          asg: 'my-asg',
-        },
-      });
-      assert.ok(provider instanceof NodeTracerProvider);
-    });
   });
 
   describe('.startSpan()', () => {
